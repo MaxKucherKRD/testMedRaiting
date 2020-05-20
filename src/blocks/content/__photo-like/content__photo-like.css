@@ -1,0 +1,15 @@
+.content__photo-like {
+
+ width: 22px;
+ height: 20px;
+ margin-right: 15px ;
+ background-color: transparent;
+ border: none;
+ background: url(../../../images/like-inactive.svg) no-repeat;
+ background-size: contain;
+ outline: none;
+}
+
+.content__photo-like_is-liked {
+    background: url(../../../images/like-active.svg) no-repeat;
+}

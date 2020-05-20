@@ -1,0 +1,10 @@
+.content__arrow {
+    width: 10px;
+    display: inline-block;
+    transition: .3s;
+    
+}
+.content__arrow_is-opened {
+    transform: rotate(90deg);
+}
+

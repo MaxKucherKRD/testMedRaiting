@@ -1,0 +1,7 @@
+@import url(./__link/header__link.css);
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}

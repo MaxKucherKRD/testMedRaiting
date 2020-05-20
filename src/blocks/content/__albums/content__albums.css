@@ -1,0 +1,11 @@
+.content__albums {
+    padding-left: 25px;
+    height: 0;
+    overflow: hidden;  
+  
+    
+}
+
+.content__albums_is-opened {  
+    height: auto;
+}
