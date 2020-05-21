@@ -9,11 +9,6 @@ export default class List {
         this.container.classList.add('content')
         document.querySelector('.main').append(this.container);
         this.setListeners();
-        
-
-
-
-
     }
     addUsers() {    
         this.Api.getUsers()
@@ -58,7 +53,6 @@ export default class List {
                     elementContainer.append(photoElement);
                 })
             })
-
 
     }
     setListeners() {
@@ -114,47 +108,3 @@ export default class List {
 
 }
 
-/* setListeners() {
-    this.container.addEventListener('click', (event) => {
-        const container = event.target.parentElement
-        if (container.classList.contains('content__item')) {
-            if (container.children.length === 2) {
-                const albumsContainer = document.createElement('div')
-                albumsContainer.classList.add('content__albums')
-                container.append(albumsContainer)
-                this.addAlbums(albumsContainer, +container.dataset.userid)
-
-            } else {
-                const albumsContainer = container.querySelector('.content__albums')
-                albumsContainer.classList.toggle('content__albums_is-opened')
-            }
-            const arrowUserName = container.querySelector('.content__arrow')
-            arrowUserName.classList.toggle('content__arrow_is-opened')
-        }
-        if (container.classList.contains('content__album')) {
-            if (container.children.length === 2){
-                const photoContainer = document.createElement('div')
-                photoContainer.classList.add('content__photos')
-                container.append(photoContainer);
-                this.addPhotos(photoContainer,+container.dataset.albumid)
-            } else {
-                const photosContainer = container.querySelector('.content__photos')
-                photosContainer.classList.toggle('content__photos_is-opened')
-            }
-            const arrowUserName = container.querySelector('.content__arrow')
-            arrowUserName.classList.toggle('content__arrow_is-opened')
-        }
-        if (event.target.classList.contains('content__photo-like')){
-            const photoId = event.target.dataset.photoid;               
-            this.photo = this.photoArr.find(function(item){
-            
-              return  item.photoId === +photoId
-          
-            })
-            
-            this.photo.like()    
-            
-              
-        }
-    })
-} */

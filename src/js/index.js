@@ -8,6 +8,7 @@ import FavoriteList from './components/FavoriteList';
 import Popup from './components/Popup';
 import clearElement from './utilits/clearElement'
 import '../images/close.svg';
+import '../images/next.svg';
 
 
 

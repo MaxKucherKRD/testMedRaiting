@@ -25,7 +25,6 @@ export default class FavoriteList {
             this.container.append(photoElement);                 
            
           }
-
     }
     setListeners(){
         this.container.addEventListener('click',()=>{
@@ -35,7 +34,7 @@ export default class FavoriteList {
                     return item.photoId === +photoId
                 })
                 this.photo.like()
-                
+                /* event.target.parentElement.remove() */ // если необходимо сразу удалять элемент из избранного                
             }
         })
     }

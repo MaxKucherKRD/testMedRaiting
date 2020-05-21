@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/MaxKucherKRD/testMedRaiting"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaxKucherKRD/vizitka/issues"
+    "url": "https://github.com/MaxKucherKRD/testMedRaiting/issues"
   },
   "homepage": "",
   "devDependencies": {
