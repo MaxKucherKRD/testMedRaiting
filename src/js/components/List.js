@@ -13,7 +13,9 @@ export default class List {
     addUsers() {    
         this.Api.getUsers()
             .then(users => {
-                users.forEach(element => {
+                console.log(users)
+                users.forEach(element => {                   
+                    if (Object.keys(element).length < 2){return 0}; // почему-то с API начали приходить пустые обьекты, фильтр для них.
                     const user = this.createUser(element.name, element.id)
                     const {
                         userElement

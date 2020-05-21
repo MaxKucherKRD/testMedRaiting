@@ -12,7 +12,7 @@ export default class Popup {
         this.popup.innerHTML = '';
     }
     closeEsc(event) {
-        console.log(event)
+    
         if (event.key === `Escape`) {
             this.close(this.popup);
         }
